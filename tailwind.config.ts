@@ -11,8 +11,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          "100": "#FFF1E6",
-          "500": "#FF7000",
+          "100": "#E6F2FF", // Light blue tint
+          "200": "#B3D9FF", // Lighter accent
+          "300": "#80BFFF", // Medium accent
+          "400": "#4DA6FF", // Strong accent
+          "500": "#2563EB", // Main primary - Modern blue
+          "600": "#1E4FBD", // Darker shade
+          "700": "#183B8C", // Deep shade
         },
         dark: {
           "100": "#000000",
@@ -49,6 +54,12 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "auth-dark":
+          "linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url('/images/auth-bg-dark.jpg')",
+        "auth-light":
+          "linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url('/images/auth-bg-dark.jpg')",
       },
     },
   },
