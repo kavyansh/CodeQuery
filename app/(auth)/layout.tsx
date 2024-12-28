@@ -16,7 +16,6 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
                     <Image src='/images/site-logo.svg' alt='CodeQuery Logo' width={50} height={50} />
                 </div>
                 {children}
-
                 <SocialAuthForm />
             </section>
         </main>
